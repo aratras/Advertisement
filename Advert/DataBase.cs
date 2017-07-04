@@ -7,7 +7,7 @@ namespace Advert
     class DataBase
     {
         MySqlConnection Connection;
-        string ConnectionString = "server = localhost; user id = root; persistsecurityinfo=True;database=advert;password=axioma123";
+        string ConnectionString = "server = localhost; user id = root; persistsecurityinfo=True;database=advert;password";
         DataBase()
         {
             Connection = new MySqlConnection(ConnectionString);
@@ -214,7 +214,10 @@ namespace Advert
         #region Delete From DB
         public void DeleteFromDB(int IDDel)
         {
+            using (Connection)
+            {
 
+            }
         }
         #endregion
     }
