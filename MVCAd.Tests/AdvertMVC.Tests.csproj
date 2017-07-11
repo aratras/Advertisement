@@ -90,12 +90,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MVCAd\AdvertMVC.csproj">
-      <Project>{19C85B22-E50F-4D7F-AD36-A3365417055D}</Project>
-      <Name>AdvertMVC</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

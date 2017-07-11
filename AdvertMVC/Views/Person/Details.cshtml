@@ -1,0 +1,54 @@
+﻿@model AdvertMVC.ResponsiblePerson
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dd><br /></dd>
+        <dd>
+            <div class="btn-group">
+                <button class="btn btn-default" type="button" onclick="location.href='@Url.Action("Edit", "Person", new { id = Model.ID })'">Edit</button>
+                <button class="btn btn-default" type="button" onclick="location.href='@Url.Action("Index", "Person")'">Back to list</button>
+            </div>
+        </dd>
+    </dl>
+</div>
+<p>
+        
+</p>

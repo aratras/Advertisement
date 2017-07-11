@@ -1,53 +1,33 @@
 ﻿namespace Advert
 {
-    public struct ResponsiblePerson
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-        public string Surname
-        {
-            get;
-            set;
-        }
-        public int ID
-        {
-            get;
-            set;
-        }
-    }
 
     public class AdInfo
     {
         public ResponsiblePerson Person;
         public int ID
         {
-            get;
-            set;
+            get; set;
         }
         public string AdvertizeDescription
         {
-            get;
-            set;
+            get; set;
         }
         public string PhoneNumber
         {
-            get;
-            set;
+            get; set;
         }
         public int Price
         {
-            get;
-            set;
+            get; set;
         }
 
         public AdInfo(string advertizeDescription, string responsibleName, string responsibleSurname, string phoneNumber, int price)
         {
-            Person = new ResponsiblePerson();
-            Person.Name = responsibleName;
-            Person.Surname = responsibleSurname;
+            Person = new ResponsiblePerson()
+            {
+                Name = responsibleName,
+                Surname = responsibleSurname
+            };
             AdvertizeDescription = advertizeDescription;
             PhoneNumber = phoneNumber;
             Price = price;
